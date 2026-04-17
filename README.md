@@ -30,29 +30,42 @@ A modern, AI-powered web application designed to help students track their expen
 ### Installation
 
 1. **Clone the repository:**
-   \`\`\`bash
+   ```bash
    git clone https://github.com/Tanya-garg10/smart-student-finance-tracker.git
+   ```
+
+2. **Navigate into the project directory:**
+   ```bash
    cd smart-student-finance-tracker
-   \`\`\`
+   ```
 
-2. **Install dependencies:**
-   \`\`\`bash
+3. **Install dependencies:**
+   Make sure you have Node.js installed, then run:
+   ```bash
    npm install
-   \`\`\`
+   ```
 
-3. **Environment Setup:**
-   Copy the example environment file:
-   \`\`\`bash
-   cp .env.example .env.local
-   \`\`\`
-   Fill in your configuration details:
-   - Firebase config keys
-   - \`VITE_GROQ_API_KEY\` (Your Groq API key)
+4. **Environment Setup:**
+   Create a `.env` file in the root directory by copying the provided example:
+   ```bash
+   cp .env.example .env
+   ```
+   Open the `.env` file and configure your Firebase and Groq API keys:
+   ```env
+   VITE_FIREBASE_API_KEY=your_api_key_here
+   VITE_FIREBASE_AUTH_DOMAIN=your_project_id.firebaseapp.com
+   VITE_FIREBASE_PROJECT_ID=your_project_id
+   VITE_FIREBASE_STORAGE_BUCKET=your_project_id.appspot.com
+   VITE_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
+   VITE_FIREBASE_APP_ID=your_app_id
+   VITE_GROQ_API_KEY=your_groq_api_key_here
+   ```
 
-4. **Run the Development Server:**
-   \`\`\`bash
+5. **Run the Development Server:**
+   ```bash
    npm run dev
-   \`\`\`
+   ```
+   Open [http://localhost:3000](http://localhost:3000) (or the port specified in your terminal) to view the application in your browser.
 
 ## 📜 License
 
