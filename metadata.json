@@ -1,0 +1,5 @@
+{
+  "name": "Student Finance Tracker",
+  "description": "A smart, interactive dashboard with analytics and gamification elements to help students manage income, expenses, saving goals, and budgeting.",
+  "requestFramePermissions": []
+}
